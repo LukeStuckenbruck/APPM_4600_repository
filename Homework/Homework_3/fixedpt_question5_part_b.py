@@ -7,25 +7,25 @@ def driver():
      f1 = lambda x: -np.sin(2*x) + ((5*x)/4) - (3/4)
 # fixed point is alpha1 = 1.4987....
 
-     f2 = lambda x: 0*x
+     #f2 = lambda x: 0*x
 #fixed point is alpha2 = 3.09... 
 
      Nmax = 1000
      tol = 1e-10
 
 # test f1 '''
-     x0 = 0
+     x0 = 1.4
      [xstar,ier] = fixedpt(f1,x0,tol,Nmax)
      print('the approximate fixed point is:',xstar)
      print('f1(xstar):',f1(xstar))
      print('Error message reads:',ier)
     
 #test f2 '''
-     x0 = 2
-     [xstar,ier] = fixedpt(f2,x0,tol,Nmax)
-     print('the approximate fixed point is:',xstar)
-     print('f2(xstar):',f2(xstar))
-     print('Error message reads:',ier)
+     #x0 = 2
+     #[xstar,ier] = fixedpt(f2,x0,tol,Nmax)
+     #print('the approximate fixed point is:',xstar)
+     #print('f2(xstar):',f2(xstar))
+     #print('Error message reads:',ier)
 
 
 
