@@ -14,14 +14,14 @@ def driver():
      tol = 1e-10
 
 # test f1 '''
-     x0 = 0.8
+     x0 = 0
      [xstar,ier] = fixedpt(f1,x0,tol,Nmax)
      print('the approximate fixed point is:',xstar)
      print('f1(xstar):',f1(xstar))
      print('Error message reads:',ier)
     
 #test f2 '''
-     x0 = 1
+     x0 = 2
      [xstar,ier] = fixedpt(f2,x0,tol,Nmax)
      print('the approximate fixed point is:',xstar)
      print('f2(xstar):',f2(xstar))
