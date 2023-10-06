@@ -1,3 +1,6 @@
+### SOLUTIONS
+# converges to point at (1.0936, 1.3603, 1.3603)
+
 Nmax = 200
 
 def f(x, y, z):
