@@ -113,8 +113,10 @@ def driver():
     plt.figure() 
     err_l = abs(yeval_l-fex)
     err_dd = abs(yeval_dd-fex)
+    err_mono = abs(monomial(coeffs, xeval, N_max)-fex)
     plt.semilogy(xeval,err_l,'ro--',label='lagrange')
     plt.semilogy(xeval,err_dd,'bs--',label='Newton DD')
+    plt.semilogy(xeval,err_mono,'m--',label='Monomial')
     plt.legend()
     plt.show()
 
