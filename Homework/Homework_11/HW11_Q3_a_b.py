@@ -5,7 +5,7 @@ import math
 ### Solutions
 # See Gradescope submission for answers to questions
 
-x_gamma = 6
+x_gamma = 8
 
 def gamma_int(t, x=x_gamma):
     return (t**(x - 1)*(math.e**(-t)))
